@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuBilen">
+    <property name="title">
+     <string>bilen</string>
+    </property>
+    <addaction name="actionK_r"/>
+    <addaction name="actionT_nd_sluk_motor"/>
+    <addaction name="separator"/>
+    <addaction name="actionBenyt_rat"/>
+    <addaction name="separator"/>
+    <addaction name="actionAfslut_og_sluk_motor"/>
+   </widget>
+   <widget class="QMenu" name="menuGps_og_steder">
+    <property name="title">
+     <string>gps og steder</string>
+    </property>
+    <addaction name="actionV_lg_sted_til_k_rsel"/>
+   </widget>
+   <widget class="QMenu" name="menuIndstillinger">
+    <property name="title">
+     <string>indstillinger</string>
+    </property>
+    <addaction name="actionIndstil_bilk_rsels_server"/>
+   </widget>
+   <widget class="QMenu" name="menuHj_lp">
+    <property name="title">
+     <string>hjælp</string>
+    </property>
+    <addaction name="actionGuide"/>
+   </widget>
+   <addaction name="menuBilen"/>
+   <addaction name="menuGps_og_steder"/>
+   <addaction name="menuIndstillinger"/>
+   <addaction name="menuHj_lp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionK_r">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Kør</string>
+   </property>
+  </action>
+  <action name="actionBenyt_rat">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Benyt rat</string>
+   </property>
+  </action>
+  <action name="actionIndstil_bilk_rsels_server">
+   <property name="text">
+    <string>indstil bilkørsels-server</string>
+   </property>
+  </action>
+  <action name="actionV_lg_sted_til_k_rsel">
+   <property name="text">
+    <string>vælg sted til kørsel</string>
+   </property>
+  </action>
+  <action name="actionGuide">
+   <property name="text">
+    <string>guide</string>
+   </property>
+  </action>
+  <action name="actionAfslut_og_sluk_motor">
+   <property name="text">
+    <string>afslut og sluk motor</string>
+   </property>
+  </action>
+  <action name="actionT_nd_sluk_motor">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>tænd/sluk motor</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
